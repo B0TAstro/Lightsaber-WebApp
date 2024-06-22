@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --hue : 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  
+}
+
+.lightsaber {
+  display: flex;
+  width: 50vmin;
+  height: 1.5vmin;
+}
+
+.hilt {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1vmin;
+  width: 9vmin;
+  padding: 0 1.5vmin 0 0;
+  border-radius: .5vmin 0 0 .5vmin;
+  background: linear-gradient(to bottom, #444, #222); 
+}
+
+.bt {
+  width: .5vmin;
+  aspect-ratio: 1 / 1;
+  background-color: hsl(var(--hue), 60%, 80%, .75);
+  filter: drop-shadow(0 0 10px hsl(var(--hue), 60%, 90%, .8));
+}
+
+.beam {
+  flex : 1;
+  border-radius: 0 1vmin 1vmin 0;
+  background-color: hsl(var(--hue), 60%, 90%, .75);
+  filter: 
+      drop-shadow(0 0 15px hsl(var(--hue), 60%, 90%, .8))
+      drop-shadow(0 0 20px hsl(var(--hue), 70%, 80%, .7))
+      drop-shadow(0 0 25px hsl(var(--hue), 80%, 70%, .6))
+      drop-shadow(0 0 30px hsl(var(--hue), 90%, 60%, .5))
+      drop-shadow(0 0 35px hsl(var(--hue), 100%, 50%, .4))
+      ;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0 1.5rem;
+}
+
+#logo_1 {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  width: 130px;
+}
+
+#logo_2 {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  width: 140px;
+}
+
+/*
+footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+  z-index: 999;
+}
+*/
